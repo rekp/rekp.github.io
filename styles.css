@@ -1,0 +1,249 @@
+/* ---- Tokens ---- */
+:root {
+  --paper: #FAF7F2;
+  --ink: #1F2A2E;
+  --ink-soft: #4A5459;
+  --accent: #3E5641;
+  --accent-soft: #7A8C7C;
+  --rule: #D8D2C7;
+}
+
+/* ---- Reset ---- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem 4rem;
+}
+
+/* ---- Hero ---- */
+.hero {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.eyebrow,
+.section-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.eyebrow { margin-bottom: 3rem; }
+
+.names {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  font-weight: 300;
+  line-height: 1.05;
+  margin-bottom: 2.5rem;
+}
+
+.name {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-style: italic;
+  font-weight: 300;
+}
+
+.amp {
+  font-size: clamp(3.5rem, 12vw, 6rem);
+  color: var(--accent);
+  font-style: italic;
+  font-weight: 300;
+  line-height: 0.85;
+  margin: 0.3rem 0;
+}
+
+.invitation {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  margin-bottom: 2rem;
+}
+
+.date {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 1rem;
+  color: var(--ink-soft);
+}
+
+.date-main {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--ink);
+  padding: 0.6rem 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  margin: 0.3rem 0;
+}
+
+/* ---- Sections ---- */
+.section {
+  padding: 4rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.section-label {
+  display: block;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+/* ---- Story ---- */
+.story {
+  font-size: 1.3rem;
+  line-height: 1.75;
+  text-align: center;
+  max-width: 42ch;
+  margin: 0 auto;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+/* ---- Events ---- */
+.events {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.event { text-align: center; }
+
+.event-time {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.event-name {
+  font-size: 1.75rem;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+}
+
+.event-place {
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  margin-bottom: 0.2rem;
+}
+
+.event-note {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  color: var(--accent-soft);
+}
+
+/* ---- Cards ---- */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-bottom: 0.6rem;
+}
+
+.card p:not(.card-title) {
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+/* ---- RSVP ---- */
+.rsvp { text-align: center; }
+
+.rsvp-text {
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  margin-bottom: 2rem;
+}
+
+.rsvp-button {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: var(--accent);
+  padding: 1rem 2.75rem;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.rsvp-button:hover,
+.rsvp-button:focus-visible {
+  background: var(--ink);
+}
+
+.rsvp-button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* ---- Footer ---- */
+footer {
+  text-align: center;
+  padding-top: 4rem;
+  color: var(--accent-soft);
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 560px) {
+  main { padding: 4rem 1.25rem 3rem; }
+  .section { padding: 3rem 0; }
+  .cards { grid-template-columns: 1fr; gap: 2rem; }
+  .hero { padding-bottom: 3.5rem; }
+}
+
+/* ---- Motion preferences ---- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
