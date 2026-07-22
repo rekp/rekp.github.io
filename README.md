@@ -1,5 +1,3 @@
-# Patrick and Kayleigh's Wedding
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
