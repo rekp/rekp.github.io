@@ -1,2 +1,2 @@
-# kayleighandpatrick.github.io
+# Patrick and Kayleigh's Wedding
 Wedding site
