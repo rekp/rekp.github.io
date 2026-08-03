@@ -38,7 +38,47 @@ main {
 /* ---- Hero ---- */
 .hero {
   text-align: center;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
+}
+
+/* ---- Photo ---- */
+.photo-section {
+  margin: 0 0 3rem;
+}
+
+.photo-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+/* ---- Save-the-date link ---- */
+.story-section { text-align: center; }
+
+.save-date-link {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: var(--accent);
+  padding: 1rem 2.75rem;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.save-date-link:hover,
+.save-date-link:focus-visible {
+  background: var(--ink);
+}
+
+.save-date-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 .eyebrow,
