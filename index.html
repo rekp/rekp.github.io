@@ -14,6 +14,34 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="corner-decor" viewBox="0 0 60 60">
+      <path d="M48 8 Q32 12 22 22 Q12 32 8 48" stroke="#869670" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="40" cy="9" rx="5" ry="2" fill="#869670" transform="rotate(-15 40 9)"/>
+      <ellipse cx="28" cy="14" rx="4.5" ry="1.9" fill="#869670" transform="rotate(-35 28 14)"/>
+      <ellipse cx="14" cy="28" rx="4.5" ry="1.9" fill="#869670" transform="rotate(-55 14 28)"/>
+      <ellipse cx="9" cy="40" rx="5" ry="2" fill="#869670" transform="rotate(-75 9 40)"/>
+      <g transform="translate(22 22)">
+        <circle r="8" fill="#EDB93A"/>
+        <circle r="5.5" fill="#E67A2B"/>
+        <circle r="3" fill="#D9694E"/>
+        <circle r="1.5" fill="#8B3A1F"/>
+      </g>
+      <g transform="translate(45 18)">
+        <ellipse cx="0" cy="-3.5" rx="1.8" ry="3.5" fill="#E68DA1"/>
+        <ellipse cx="0" cy="-3.5" rx="1.8" ry="3.5" fill="#E68DA1" transform="rotate(72)"/>
+        <ellipse cx="0" cy="-3.5" rx="1.8" ry="3.5" fill="#E68DA1" transform="rotate(144)"/>
+        <ellipse cx="0" cy="-3.5" rx="1.8" ry="3.5" fill="#E68DA1" transform="rotate(216)"/>
+        <ellipse cx="0" cy="-3.5" rx="1.8" ry="3.5" fill="#E68DA1" transform="rotate(288)"/>
+        <circle r="1.5" fill="#EDB93A"/>
+      </g>
+      <g transform="translate(18 46)">
+        <circle r="3.5" fill="#EDB93A"/>
+        <circle r="2" fill="#E67A2B"/>
+      </g>
+    </symbol>
+  </svg>
+
   <main>
 
     <section class="hero">
@@ -109,10 +137,16 @@
     </section>
 
     <section class="photo-section" aria-label="Kayleigh and Patrick">
-      <img src="frontpage.jpg"
-           alt="Kayleigh and Patrick"
-           loading="eager"
-           fetchpriority="high">
+      <div class="photo-frame">
+        <img src="frontpage.jpg"
+             alt="Kayleigh and Patrick"
+             loading="eager"
+             fetchpriority="high">
+        <svg class="photo-corner tl" viewBox="0 0 60 60" aria-hidden="true"><use href="#corner-decor"/></svg>
+        <svg class="photo-corner tr" viewBox="0 0 60 60" aria-hidden="true"><use href="#corner-decor"/></svg>
+        <svg class="photo-corner bl" viewBox="0 0 60 60" aria-hidden="true"><use href="#corner-decor"/></svg>
+        <svg class="photo-corner br" viewBox="0 0 60 60" aria-hidden="true"><use href="#corner-decor"/></svg>
+      </div>
     </section>
 
     <svg class="divider" width="180" height="34" viewBox="0 0 180 34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
