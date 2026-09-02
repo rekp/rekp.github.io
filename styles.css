@@ -252,6 +252,10 @@ main {
   gap: 2.5rem;
 }
 
+.travel-cards .card {
+  text-align: center;
+}
+
 .card-title {
   font-size: 1.35rem;
   font-style: italic;
