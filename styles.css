@@ -411,6 +411,38 @@ main {
   line-height: 1.2;
 }
 
+.registry-figure {
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+.registry-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+}
+
+.registry-figure figcaption {
+  margin-top: 0.45rem;
+  color: var(--accent-soft);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.62rem;
+  line-height: 1.45;
+}
+
+.registry-figure figcaption a {
+  color: inherit;
+  text-underline-offset: 2px;
+}
+
+.registry-figure figcaption a:hover,
+.registry-figure figcaption a:focus-visible {
+  color: var(--accent-deep);
+}
+
 .registry-card > p:not(.registry-kicker):not(.registry-note) {
   color: var(--ink-soft);
   font-size: 0.98rem;
