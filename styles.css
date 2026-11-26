@@ -433,33 +433,10 @@ main {
   line-height: 1.45;
 }
 
-.registry-figure figcaption a {
-  color: inherit;
-  text-underline-offset: 2px;
-}
-
-.registry-figure figcaption a:hover,
-.registry-figure figcaption a:focus-visible {
-  color: var(--accent-deep);
-}
-
-.registry-card > p:not(.registry-kicker):not(.registry-note) {
+.registry-card > p:not(.registry-kicker) {
   color: var(--ink-soft);
   font-size: 0.98rem;
   line-height: 1.55;
-}
-
-.registry-note {
-  margin: 1rem 0;
-  color: var(--ink-soft);
-  font-family: 'Inter', sans-serif;
-  font-size: 0.72rem;
-  line-height: 1.5;
-}
-
-.registry-note strong {
-  color: var(--ink);
-  font-weight: 500;
 }
 
 .registry-link {
