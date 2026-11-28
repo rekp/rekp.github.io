@@ -358,6 +358,25 @@ main {
   content: '\2022';
 }
 
+.guide-list a {
+  color: inherit;
+  text-decoration-color: var(--rule);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.guide-list a:hover,
+.guide-list a:focus-visible {
+  color: var(--accent-deep);
+  text-decoration-color: var(--accent);
+}
+
+.guide-list a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 .guide-note {
   margin-top: 0.75rem;
   color: var(--accent-soft);
