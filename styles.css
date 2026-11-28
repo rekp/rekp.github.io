@@ -307,6 +307,66 @@ main {
   outline-offset: 3px;
 }
 
+/* ---- Explore Savannah ---- */
+.explore-section {
+  text-align: center;
+}
+
+.explore-intro {
+  max-width: 610px;
+  margin: 0 auto 2rem;
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.savannah-guide {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  text-align: left;
+}
+
+.guide-card {
+  padding: 1.4rem 1.5rem;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.guide-title {
+  margin-bottom: 0.65rem;
+  color: var(--forest);
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.guide-list {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+  line-height: 1.45;
+  list-style: none;
+}
+
+.guide-list li::before {
+  margin-right: 0.55rem;
+  color: var(--accent);
+  content: '\2022';
+}
+
+.guide-note {
+  margin-top: 0.75rem;
+  color: var(--accent-soft);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
 /* ---- FAQ ---- */
 .faq {
   max-width: 620px;
@@ -507,6 +567,7 @@ footer p {
 @media (max-width: 620px) {
   .cards,
   .travel-cards,
+  .savannah-guide,
   .registry-cards {
     grid-template-columns: 1fr;
     gap: 1.5rem;
