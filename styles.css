@@ -170,52 +170,10 @@ main {
   margin-bottom: 2rem;
 }
 
-/* ---- Save-the-date ---- */
-.story-section { text-align: center; }
-
-.save-date-link {
-  display: inline-block;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--paper);
-  background: var(--accent);
-  padding: 1rem 2.75rem;
-  text-decoration: none;
-  border-radius: 2px;
-  transition: background 0.2s ease;
-}
-
-.save-date-link:hover,
-.save-date-link:focus-visible {
-  background: var(--accent-deep);
-}
-
-.save-date-link:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 3px;
-}
-
 /* ---- Events ---- */
-.events {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-  align-items: center;
-}
-
-.event { text-align: center; }
-
-.event-time {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--sage);
-  margin-bottom: 0.5rem;
+.day-venue {
+  margin-bottom: 1.75rem;
+  text-align: center;
 }
 
 .event-name {
@@ -231,11 +189,39 @@ main {
   margin-bottom: 0.2rem;
 }
 
-.event-note {
+.schedule {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-width: 680px;
+  margin: 0 auto;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.schedule-item {
+  padding: 1.1rem 0.5rem;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.schedule-time {
+  display: block;
+  margin-bottom: 0.45rem;
   font-family: 'Inter', sans-serif;
-  font-size: 0.75rem;
-  color: var(--accent-soft);
-  letter-spacing: 0.05em;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: var(--sage);
+}
+
+.schedule-name {
+  display: block;
+  color: var(--ink);
+  font-size: 1.15rem;
+  font-style: italic;
+  line-height: 1.2;
 }
 
 /* ---- Cards ---- */
@@ -571,9 +557,12 @@ footer {
   padding-top: 3rem;
 }
 
-.footer-ribbon {
+.footer-gus {
   display: block;
-  margin: 0 auto 0.5rem;
+  width: 110px;
+  max-width: 30vw;
+  height: auto;
+  margin: 0 auto 0.75rem;
 }
 
 footer p {
@@ -590,6 +579,10 @@ footer p {
   .registry-cards {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .schedule {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
